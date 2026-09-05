@@ -49,7 +49,7 @@ Now start the script
 
     - If you changed the name of the file you'll need to adjust "zano_sub_git.py" accordingly
 
-Now copy and paste the "New Deposit Address" and send crypto to that address. The script will handle the sweeping function to your MAIN_ADDRESS.
+Command prompt will display "New Deposit Address" copy the address and send Zano to it. The script will handle the sweeping function to your MAIN_ADDRESS.
 
 ----------------
 Code Explanation
