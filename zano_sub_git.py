@@ -97,9 +97,12 @@ import requests
 # Configuration
 
 SIMPLEWALLET_BIN = r"C:\Program Files\Zano\simplewallet.exe" # This is the path to your SIMPLE_WALLET its typically in program files but double check
+
 DAEMON_ADDRESS = "127.0.0.1:11211"
-MAIN_ADDRESS = "Wallet" # YOU NEED TO CHANGE THIS, If you don't the script will cancel itself
-WALLET_DIR = "./tmp_sub_address" # This is the directory your wallet files will end up in you can change it to whatever you'd like
+
+MAIN_ADDRESS = "Wallet" # YOU NEED TO CHANGE THIS
+WALLET_DIR = "./tmp_sub_address" # This is the directory your wallet files will end up in
+
 RPC_BIND_IP = "127.0.0.1" # This decides who can send commands to your RPC. It defaults to only listening to your own machine. If you bind it to 0.0.0.0 it means anybody can execute commands on your wallet
 CONFIRMATIONS_REQUIRED = 10 # This is the default confirmations required by the Zano Blockchain if you set it below 10 the script will cancel itself
 NATIVE_ASSET_ID = "d6329b5b1f7c0805b5c345f4957554002a2f557845f64d7645dae0e051a6498a"
