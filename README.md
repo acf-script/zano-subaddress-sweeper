@@ -1,8 +1,7 @@
 # zano-subaddress-sweeper
 """
-Zano sub-address sweeper
-Made for the Full Zano Wallet: v2.21.506
-==========================================================
+**Zano sub-address sweeper**
+**Made for the Full Zano Wallet: v2.21.506**
 
 Zano does not have a native sub-address feature. This script enables sub addresses without having to manually create new wallets. (It effictively creates the sub-address feature but not literally)
 The goal of this script is to provide another layer of anonymity,
