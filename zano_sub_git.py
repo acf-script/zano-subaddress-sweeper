@@ -27,16 +27,17 @@ Zano does not have a native sub-address feature. This script enables sub address
 ------------------
 How to use script?
 ------------------
-**- First Change the MAIN_ADDRESS to your address**
+- Extract files into folder of your choice
+- Open Folder
+- Open the zano_sub_git.py and change the MAIN_ADDRESS to your Zano address
 - Double check that SIMPLEWALLET_BIN is pointed towards the correct path
-**- Ensure Full Zano Wallet is open and synced**
+- Ensure Full Zano Wallet is open and synced
 Now start the script
-- Open File containing the script in File Explorer
 - Click the address bar (or path bar) 
 - type cmd
 - Run the script using the command: python zano_sub_git.py
     - If you changed the name of the file you'll need to adjust "zano_sub_git.py" accordingly
-Now copy and paste the "New Deposit Address" and send crypto to that address. The script will handle the sweeping function to your MAIN_ADDRESS.
+Command prompt will display "New Deposit Address" copy the address and send Zano to it. The script will handle the sweeping function to your MAIN_ADDRESS.
 
 ----------------
 Code Explanation
