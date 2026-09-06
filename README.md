@@ -64,7 +64,7 @@ Each cycle:
   6. Shuts down that wallet's RPC server
      and starts a new cycle with a brand new wallet.
 
-It loops forever until you press Ctrl+C. When you do, it shuts down the current wallet's RPC server.
+It loops forever until you press Ctrl+C. When you do, script will exit.
 
 -------------
 Prerequisites
