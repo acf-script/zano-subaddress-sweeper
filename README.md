@@ -28,6 +28,7 @@ Zano does not have a native sub-address feature. This script enables sub address
 ------------------
 How to use script?
 ------------------
+(Instructions for Windows)
 
 - Extract files into folder of your choice
   
@@ -73,6 +74,7 @@ Prerequisites
 - You will need to ensure python is downloaded. (https://www.python.org/downloads/)
 - You need to have pip downloaded
     - to download pip open a windows powershell and enter: pip install requests
+    - Additionally if you want qr codes enter: pip install qrcode[pil]
 
 ------
 Extras
