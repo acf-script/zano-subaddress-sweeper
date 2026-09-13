@@ -27,6 +27,7 @@ Zano does not have a native sub-address feature. This script enables sub address
 ------------------
 How to use script?
 ------------------
+(Instructions for Windows)
 - Extract files into folder of your choice
 - Open Folder
 - Open the zano_sub_git.py and change the MAIN_ADDRESS to your Zano address
@@ -61,6 +62,7 @@ Prerequisites
 - You will need to ensure python is downloaded. (https://www.python.org/downloads/)
 - You need to have pip downloaded
     - to download pip open a windows powershell and enter: pip install requests
+    - Additionally if you want qr codes enter: pip install qrcode[pil]
 
 ------
 Extras
@@ -94,6 +96,7 @@ import socket
 import subprocess
 import time
 import requests
+import qrcode
 
 # Configuration
 
@@ -289,6 +292,11 @@ def run_one_cycle(cycle_num):
     address = generate_wallet(wallet_path, password)
     print(f"New deposit address:\n  {address}")
     print(f"Wallet password (save this!): {password}")
+    qr = qrcode.QRCode(border=2)
+    qr.add_data(f"zano:{address}")
+    qr.make(fit=True)
+    print(f"Deposit Address QR Code:")
+    qr.print_ascii()
 
     print("Starting wallet RPC server and syncing with daemon...")
     proc, rpc_url = start_wallet_rpc(wallet_path, password, port)
